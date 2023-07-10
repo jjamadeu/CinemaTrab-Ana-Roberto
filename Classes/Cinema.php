@@ -46,6 +46,10 @@ class Cinema
 
     //***FILME***//
 
+    function getFilmes(){
+        return $this->filmes;
+    }
+    
     function adicionarFilme($filme)
     {
 

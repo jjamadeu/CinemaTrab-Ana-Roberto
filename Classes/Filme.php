@@ -22,7 +22,7 @@
         }
 
         function __toString(){
-            return "Titulo: $this->titulo </br> Genêro: $this->genero </br> Sinópse: $this->sinopse </br>  Classificação: $this->classificacao </br> Duração: $this->duracao";
+            return " Id: $this->idFilme </br> Titulo: $this->titulo </br> Genêro: $this->genero </br> Sinópse: $this->sinopse </br>  Classificação: $this->classificacao </br> Duração: $this->duracao";
         }
 
         function getIdFilme(){
