@@ -1,23 +1,22 @@
 <?php
+    require_once 'Cinema.php';
+    require_once 'Sala.php';
 
-    require_once '../Classes/Cinema.php';
-
-    $numSalaAntigo = $_GET['numSalaAntigo']; 
-    $numSala = $_GET['numSala'];
-    $lotacao = $_GET['lotacao'];
+    $numSala = $_POST['numSala'];
+    $novaLotacao = $_POST['novaLotacao'];
 
     $cinema = new Cinema();
 
-    $sala = $cinema->buscarSala($numSalaAntigo);
+    $sala = $cinema->buscarSala($numSala);
 
-    $sala->setNumero($numSala);
-    $sala->setLotacao($lotacao);
+    if ($sala) {
+        $sala->setLotacao($novaLotacao);
 
+        echo "<script>alert('Sala alterada com sucesso!');</script>";
+        echo "<script>window.location.href = 'index.php';</script>";
+    } else {
+        
+        echo "<script>alert('Sala não encontrada!');</script>";
+        echo "<script>window.location.href = 'index.php';</script>";
+    }
 ?>
-
-<script>
-
-    alert('Sala Alterada com Sucesso');
-    window.location.href = "formAlterarSala.php";
-
-</script>

@@ -1,6 +1,5 @@
-<?php 
-
-    require_once '../Classes/Cinema.php';
+<?php
+    require_once 'Cinema.php';
 
     $numSala = $_REQUEST['numSala'];
 
@@ -8,9 +7,6 @@
 
     $cinema->removerSala($numSala);
 
+    echo "<script>alert('Sala removida com sucesso!');</script>";
+    echo "<script>window.location.href = 'index.php';</script>";
 ?>
-
-<script>
-    alert('Sala removida com sucesso');
-    window.location.href = 'formRemoverSala.php';
-</script>
