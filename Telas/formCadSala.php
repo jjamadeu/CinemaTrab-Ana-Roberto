@@ -11,7 +11,7 @@
             Número: <input type="number" id="numSala" name="numSala">
         </p>
         <p>
-            Lotação:  <input type="number" id="lotacao" name="lotacao">
+            Lotação: <input type="number" id="lotacao" name="lotacao">
         </p>
         <input type="submit">
     </form>
