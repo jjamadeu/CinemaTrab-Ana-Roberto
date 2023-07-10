@@ -19,7 +19,6 @@
         <form action="./alterarFilme.php" method="get">
 
         </form>
-        kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
     </div>
 
 
