@@ -1,0 +1,789 @@
+{
+  "id": "058858cb-f367-47b9-8c77-04d33142a5b7",
+  "version": "2.0",
+  "name": "alterar",
+  "url": "http://localhost/CinemaTrab/CinemaTrab/index.php",
+  "tests": [{
+    "id": "87ca006a-1a70-40f3-af4d-3e7ffd47ec72",
+    "name": "alterar sala correto",
+    "commands": [{
+      "id": "348b911b-af5b-4972-9d67-2c51971cb15f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/CinemaTrab/CinemaTrab/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca58b3e4-6cf1-4767-9ff5-fb8f44eead37",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "836x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7907384-3e7b-4b4a-987d-31a1db1d8a8e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > td:nth-child(3) > a",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'📝')])[7]", "xpath:link"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[3]/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './telas/formAlterarSala.php?numSala=11')]", "xpath:href"],
+        ["xpath=//tr[3]/td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "893cec41-a37b-4b93-b916-df5092bbe406",
+      "comment": "",
+      "command": "click",
+      "target": "id=numSala",
+      "targets": [
+        ["id=numSala", "id"],
+        ["name=numSala", "name"],
+        ["css=#numSala", "css:finder"],
+        ["xpath=//input[@id='numSala']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e5f02d3-5a4e-48fe-82ba-97041219d84d",
+      "comment": "",
+      "command": "type",
+      "target": "id=numSala",
+      "targets": [
+        ["id=numSala", "id"],
+        ["name=numSala", "name"],
+        ["css=#numSala", "css:finder"],
+        ["xpath=//input[@id='numSala']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "a7f04170-7104-4a7e-b303-a70ecf26adc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=lotacao",
+      "targets": [
+        ["id=lotacao", "id"],
+        ["name=lotacao", "name"],
+        ["css=#lotacao", "css:finder"],
+        ["xpath=//input[@id='lotacao']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7b54fb8-25c5-4aca-b6ae-5ec7dd6ec731",
+      "comment": "",
+      "command": "type",
+      "target": "id=lotacao",
+      "targets": [
+        ["id=lotacao", "id"],
+        ["name=lotacao", "name"],
+        ["css=#lotacao", "css:finder"],
+        ["xpath=//input[@id='lotacao']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "f57c068c-b7cd-4da4-9f2b-9b3d737273fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(4)",
+      "targets": [
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7b42875a-13e4-45b3-85cc-ebd36296249d",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=(//div[@id='conteudo']/section/table/tbody/tr[3]/td)[9]",
+      "targets": [
+        ["xpath=(//div[@id='conteudo']/section/table/tbody/tr[3]/td)[9]", "xpath:idRelative"],
+        ["xpath=//div[2]/section/table/tbody/tr[3]/td", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "ef8a4b9b-72a1-4727-9134-8eb7f092a395",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=(//div[@id='conteudo']/section/table/tbody/tr[3]/td[2])[2]",
+      "targets": [
+        ["xpath=(//div[@id='conteudo']/section/table/tbody/tr[3]/td[2])[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/section/table/tbody/tr[3]/td[2]", "xpath:position"]
+      ],
+      "value": "22"
+    }]
+  }, {
+    "id": "a5150006-d5dc-4aaa-b2e1-4dda15d6c9ce",
+    "name": "alterar filme correto",
+    "commands": [{
+      "id": "259d3156-e7a0-402e-8d49-c31f80cffd1e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/CinemaTrab/CinemaTrab/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5da15a7b-b5db-4439-9978-dda04840049f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "836x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d874b21c-f014-4289-a137-f4d04ce47c83",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td:nth-child(7) > a",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(7) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'📝')])[4]", "xpath:link"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[4]/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './telas/formAlterarFilme.php?idFilme=11')]", "xpath:href"],
+        ["xpath=//tr[4]/td[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d589f29-65af-4eae-ad2a-deb21d4e3200",
+      "comment": "",
+      "command": "click",
+      "target": "name=idFilme",
+      "targets": [
+        ["name=idFilme", "name"],
+        ["css=p:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='idFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c9e42a8-1cb3-419c-93b9-dd07f466bafb",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(2)",
+      "targets": [
+        ["css=p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/form/p[2]", "xpath:idRelative"],
+        ["xpath=//p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Alteração de ID para: ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "62614473-d73a-44af-88c6-78b9f074939b",
+      "comment": "",
+      "command": "type",
+      "target": "name=idFilme",
+      "targets": [
+        ["name=idFilme", "name"],
+        ["css=p:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='idFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "f8d5fe83-815f-41d7-9cae-6d4fe734de56",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(3)",
+      "targets": [
+        ["css=p:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/form/p[3]", "xpath:idRelative"],
+        ["xpath=//p[3]", "xpath:position"],
+        ["xpath=//p[contains(.,'Alteração de Titulo para: ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3364362-fc3a-48aa-b956-b5e256630213",
+      "comment": "",
+      "command": "type",
+      "target": "name=tituloFilme",
+      "targets": [
+        ["name=tituloFilme", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='tituloFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "3c9d0f54-d050-42f0-ab34-c7b9691308ab",
+      "comment": "",
+      "command": "click",
+      "target": "name=generoFilme",
+      "targets": [
+        ["name=generoFilme", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='generoFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[4]/input", "xpath:idRelative"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f30b41d2-35d3-4b78-ae8e-debf45346692",
+      "comment": "",
+      "command": "type",
+      "target": "name=generoFilme",
+      "targets": [
+        ["name=generoFilme", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='generoFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[4]/input", "xpath:idRelative"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "43cfba6c-03c5-4d50-954e-3a2725a26ada",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(5)",
+      "targets": [
+        ["css=p:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/form/p[5]", "xpath:idRelative"],
+        ["xpath=//p[5]", "xpath:position"],
+        ["xpath=//p[contains(.,'Alteração de Sinopse para:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d29317be-efa8-499a-a61a-9b17dcb640c4",
+      "comment": "",
+      "command": "type",
+      "target": "name=sinopseFilme",
+      "targets": [
+        ["name=sinopseFilme", "name"],
+        ["css=p:nth-child(5) > input", "css:finder"],
+        ["xpath=//input[@name='sinopseFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[5]/input", "xpath:idRelative"],
+        ["xpath=//p[5]/input", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "f2985bdf-247a-4e67-9286-84af68e59334",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(6)",
+      "targets": [
+        ["css=p:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/form/p[6]", "xpath:idRelative"],
+        ["xpath=//p[6]", "xpath:position"],
+        ["xpath=//p[contains(.,'Alteração de Classificação para:')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca73ff26-3218-4630-8fed-4d78d5c00487",
+      "comment": "",
+      "command": "type",
+      "target": "name=classificacaoFilme",
+      "targets": [
+        ["name=classificacaoFilme", "name"],
+        ["css=p:nth-child(6) > input", "css:finder"],
+        ["xpath=//input[@name='classificacaoFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[6]/input", "xpath:idRelative"],
+        ["xpath=//p[6]/input", "xpath:position"]
+      ],
+      "value": "222"
+    }, {
+      "id": "23e498ba-3e5f-443f-87ed-9fa057569254",
+      "comment": "",
+      "command": "click",
+      "target": "name=duracaoFilme",
+      "targets": [
+        ["name=duracaoFilme", "name"],
+        ["css=p:nth-child(7) > input", "css:finder"],
+        ["xpath=//input[@name='duracaoFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[7]/input", "xpath:idRelative"],
+        ["xpath=//p[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28ff7cac-0d6a-4fdc-8618-b68a8656f3f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=duracaoFilme",
+      "targets": [
+        ["name=duracaoFilme", "name"],
+        ["css=p:nth-child(7) > input", "css:finder"],
+        ["xpath=//input[@name='duracaoFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[7]/input", "xpath:idRelative"],
+        ["xpath=//p[7]/input", "xpath:position"]
+      ],
+      "value": "02:11"
+    }, {
+      "id": "966bed02-a5fd-48e0-bdcc-8b7e140e22c3",
+      "comment": "",
+      "command": "type",
+      "target": "name=duracaoFilme",
+      "targets": [
+        ["name=duracaoFilme", "name"],
+        ["css=p:nth-child(7) > input", "css:finder"],
+        ["xpath=//input[@name='duracaoFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[7]/input", "xpath:idRelative"],
+        ["xpath=//p[7]/input", "xpath:position"]
+      ],
+      "value": "22:11"
+    }, {
+      "id": "7b784472-5902-4dab-9e75-ed33dbdb1310",
+      "comment": "",
+      "command": "type",
+      "target": "name=duracaoFilme",
+      "targets": [
+        ["name=duracaoFilme", "name"],
+        ["css=p:nth-child(7) > input", "css:finder"],
+        ["xpath=//input[@name='duracaoFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[7]/input", "xpath:idRelative"],
+        ["xpath=//p[7]/input", "xpath:position"]
+      ],
+      "value": "22:02"
+    }, {
+      "id": "f69d1011-cad0-490d-bdf1-62dd22e068af",
+      "comment": "",
+      "command": "type",
+      "target": "name=duracaoFilme",
+      "targets": [
+        ["name=duracaoFilme", "name"],
+        ["css=p:nth-child(7) > input", "css:finder"],
+        ["xpath=//input[@name='duracaoFilme']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[7]/input", "xpath:idRelative"],
+        ["xpath=//p[7]/input", "xpath:position"]
+      ],
+      "value": "22:22"
+    }, {
+      "id": "c1b423b7-45ed-4313-bde5-cd8d8ba9d8cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(8)",
+      "targets": [
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16a4bf58-15fe-479d-8576-3213142be7e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[4]/td", "xpath:idRelative"],
+        ["xpath=//tr[4]/td", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "2bb31f35-477f-492d-8660-fc6b62a8616e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[4]/td[2]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "6efbfc70-35fa-4c24-b1a0-7646402145b3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[4]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "c060e784-8a5f-4732-823f-223bc7d53ba5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[4]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[4]", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "e712f775-6941-4246-a922-abd5c553a1e4",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(5)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[4]/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[5]", "xpath:position"],
+        ["xpath=//td[contains(.,'222')]", "xpath:innerText"]
+      ],
+      "value": "222"
+    }, {
+      "id": "ee662fb6-bf13-49d4-8d2b-8f58023415e8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(4) > td:nth-child(6)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(6)", "css:finder"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[4]/td[6]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'22:22')]", "xpath:innerText"]
+      ],
+      "value": "22:22"
+    }]
+  }, {
+    "id": "da7768e6-31a1-416a-8923-66432d36e398",
+    "name": "alterar sessao correto",
+    "commands": [{
+      "id": "cd8b8f69-a8ea-4b26-af94-41aec7efe910",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost/CinemaTrab/CinemaTrab/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "73a73045-f14b-4025-a627-43b50e0c08ff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "836x720",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7741745b-7f83-49b5-a9c1-99b00dbb168f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(6) > a",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'📝')])[9]", "xpath:link"],
+        ["xpath=//div[@id='conteudo']/section/table/tbody/tr[2]/td[6]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './telas/formAlterarSessao.php?idSessao=11')]", "xpath:href"],
+        ["xpath=//tr[2]/td[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ead1e66-c201-40e8-a48e-a0e6467de816",
+      "comment": "",
+      "command": "click",
+      "target": "name=idSessao",
+      "targets": [
+        ["name=idSessao", "name"],
+        ["css=p:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='idSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58ac59f1-e7e6-4768-b738-a5e98497bea8",
+      "comment": "",
+      "command": "type",
+      "target": "name=idSessao",
+      "targets": [
+        ["name=idSessao", "name"],
+        ["css=p:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='idSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p/input", "xpath:idRelative"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "1122"
+    }, {
+      "id": "5ae708fc-2e95-41e0-9376-0d54e0d2bef8",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "626a444a-bbf6-4f75-ad4b-0837bbdd55cb",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "2023-07-02"
+    }, {
+      "id": "5b532a10-af4e-46ad-92b1-34dd7234d793",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "2023-07-22"
+    }, {
+      "id": "c4e3c6c0-8382-4aac-a565-42c33c3eafaf",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "2023-02-22"
+    }, {
+      "id": "32483adc-4fff-4601-8dd0-205d9707b06b",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "0002-02-22"
+    }, {
+      "id": "b2822205-f129-443e-a579-e9c0ab55b2c3",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "0022-02-22"
+    }, {
+      "id": "6ff90064-1535-45f0-8485-eb010168d9ca",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "0222-02-22"
+    }, {
+      "id": "9dce050e-e3cd-4f17-8e95-e77ef26a639d",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "2222-02-22"
+    }, {
+      "id": "ca3129cc-e8ad-4485-94d7-ac96c491b0e3",
+      "comment": "",
+      "command": "type",
+      "target": "name=dataSessao",
+      "targets": [
+        ["name=dataSessao", "name"],
+        ["css=p:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='dataSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "22222-02-22"
+    }, {
+      "id": "18c6b57c-7686-4bc9-80e2-a25a70ca7708",
+      "comment": "",
+      "command": "click",
+      "target": "name=horarioSessao",
+      "targets": [
+        ["name=horarioSessao", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='horarioSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f25f42cb-26da-4a3c-856c-80196f075594",
+      "comment": "",
+      "command": "type",
+      "target": "name=horarioSessao",
+      "targets": [
+        ["name=horarioSessao", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='horarioSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "02:11"
+    }, {
+      "id": "93e3aa07-16d4-4133-8adf-cb9db5b123f7",
+      "comment": "",
+      "command": "type",
+      "target": "name=horarioSessao",
+      "targets": [
+        ["name=horarioSessao", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='horarioSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "22:11"
+    }, {
+      "id": "5bc3d508-0535-4b3a-ba6d-efd18421287a",
+      "comment": "",
+      "command": "type",
+      "target": "name=horarioSessao",
+      "targets": [
+        ["name=horarioSessao", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='horarioSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "22:02"
+    }, {
+      "id": "00406a80-3c72-49d5-a5f5-7867a023f15e",
+      "comment": "",
+      "command": "type",
+      "target": "name=horarioSessao",
+      "targets": [
+        ["name=horarioSessao", "name"],
+        ["css=p:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='horarioSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[3]/input", "xpath:idRelative"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "22:22"
+    }, {
+      "id": "81885658-2690-4a06-8bcd-b02a74b542b1",
+      "comment": "",
+      "command": "click",
+      "target": "name=filmeSessao",
+      "targets": [
+        ["name=filmeSessao", "name"],
+        ["css=p:nth-child(5) > select", "css:finder"],
+        ["xpath=//select[@name='filmeSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[4]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7abcb54e-b157-4401-8ceb-e462f95dc324",
+      "comment": "",
+      "command": "select",
+      "target": "name=filmeSessao",
+      "targets": [],
+      "value": "label=spider man"
+    }, {
+      "id": "598c70b3-5bbb-475a-9333-0a6ddc74c504",
+      "comment": "",
+      "command": "click",
+      "target": "name=salaSessao",
+      "targets": [
+        ["name=salaSessao", "name"],
+        ["css=p:nth-child(6) > select", "css:finder"],
+        ["xpath=//select[@name='salaSessao']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/p[5]/select", "xpath:idRelative"],
+        ["xpath=//p[5]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9a1bb87-9fbb-4c4e-8068-843ab743277c",
+      "comment": "",
+      "command": "select",
+      "target": "name=salaSessao",
+      "targets": [],
+      "value": "label=1"
+    }, {
+      "id": "c766dccc-359e-4ae6-b073-7741e6cad2af",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(7)",
+      "targets": [
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@value='Enviar']", "xpath:attributes"],
+        ["xpath=//div[@id='conteudo']/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5dcf2e9-69e8-43fd-b508-c1a6fe89e4e0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td)[13]",
+      "targets": [
+        ["xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td)[13]", "xpath:idRelative"],
+        ["xpath=//div[3]/section/table/tbody/tr[2]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'1122')]", "xpath:innerText"]
+      ],
+      "value": "1122"
+    }, {
+      "id": "2ef8e1bd-39e9-4d6b-8714-8219ba819e36",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td[2])[3]",
+      "targets": [
+        ["xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td[2])[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/section/table/tbody/tr[2]/td[2]", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "79230c94-6dc3-4d68-9be2-3c9bff2690eb",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td[3])[3]",
+      "targets": [
+        ["xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td[3])[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/section/table/tbody/tr[2]/td[3]", "xpath:position"]
+      ],
+      "value": "22"
+    }, {
+      "id": "8beedafd-5ade-4374-975f-d0393bb33428",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td[4])[3]",
+      "targets": [
+        ["xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td[4])[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/section/table/tbody/tr[2]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'22222-02-22')]", "xpath:innerText"]
+      ],
+      "value": "22222-02-22"
+    }, {
+      "id": "062f8f00-d401-4e3a-9ac3-56ce3e452443",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td[5])[2]",
+      "targets": [
+        ["xpath=(//div[@id='conteudo']/section/table/tbody/tr[2]/td[5])[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/section/table/tbody/tr[2]/td[5]", "xpath:position"]
+      ],
+      "value": "22:22"
+    }]
+  }],
+  "suites": [{
+    "id": "6d7e5641-b3a0-4465-b432-bb7ac82c376e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["87ca006a-1a70-40f3-af4d-3e7ffd47ec72"]
+  }],
+  "urls": ["http://localhost/CinemaTrab/CinemaTrab/index.php"],
+  "plugins": []
+}
